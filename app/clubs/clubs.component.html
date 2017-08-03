@@ -1,0 +1,62 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+
+    <!-- Filter the Products   -->
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-2'>Filter by:</div>
+            <div class='col-md-4'>
+                <input type='text' />
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <h3>Filtered by:</h3>
+            </div>
+        </div>
+
+        <div class='has-error'></div>
+
+        <div class='table-responsive'>
+            <table class='table' *ngIf='clubs && clubs.length'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button class='btn btn-primary'>
+                                Show Logo
+                            </button>
+                        </th>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Nick Name</th>
+                        <th>Founded</th>
+                        <th>Stadium</th>
+                        <th>Stadium Capacity</th>
+                        <th>Coach</th>
+                        <th>Leauge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let club of clubs'>
+                        <td>
+                            <img [src]='club.imageUrl'
+                                 [style.width.px]='imageWidth'
+                                 [style.margin.px]= 'imageMargin'
+                                 [title]='club.name'>
+                        </td>
+                        <td>{{club.id}}</td>
+                        <td>{{club.name}}</td>
+                        <td>{{club.nickName}}</td>   
+                        <td>{{club.founded}}</td>
+                        <td>{{club.stadium}}</td>
+                        <td>{{club.stadiumCapacity}}</td>
+                        <td>{{club.coach}}</td>
+                        <td>{{club.league}}</td>         
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
