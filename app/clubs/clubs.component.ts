@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
     selector: 'tb-clubs',
     templateUrl: 'app/clubs/clubs.component.html'
