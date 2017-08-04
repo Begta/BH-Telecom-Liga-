@@ -7,18 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var club_service_1 = require("./clubs/club.service");
-var AppComponent = (function () {
-    function AppComponent() {
+var ClubsFilterPipe = (function () {
+    function ClubsFilterPipe() {
     }
-    return AppComponent;
+    ClubsFilterPipe.prototype.transform = function (value, filterBy) {
+        filterBy = filterBy ? filterBy.toLocaleLowerCase() : null;
+        return filterBy ? value.filter(function (club) {
+            return club.name.toLocaleLowerCase().indexOf(filterBy) !== -1;
+        }) : value;
+    };
+    return ClubsFilterPipe;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'bh-app',
-        template: "\n       <div><tb-clubs></tb-clubs></div>\n    ",
-        providers: [club_service_1.ClubService]
+ClubsFilterPipe = __decorate([
+    core_1.Pipe({
+        name: 'clubFilter'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ClubsFilterPipe);
+exports.ClubsFilterPipe = ClubsFilterPipe;
+//# sourceMappingURL=clubs-filter.pipe.js.map

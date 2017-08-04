@@ -6,15 +6,15 @@
     <!-- Filter the Products   -->
     <div class='panel-body'>
         <div class='row'>
-            <div class='col-md-2'>Filter by:</div>
-            <div class='col-md-4'>
+            <div class='col-md-2'>Za filtriranje unijet ime kluba:</div>
+
                 <input type='text' 
                         [(ngModel)]='listFilter'/>
-            </div>
+
         </div>
         <div class='row'>
             <div class='col-md-6'>
-                <h3>Filtered by: {{listFilter}}</h3>
+                <h3>Rezultat filtriranja: {{listFilter}}</h3>
             </div>
         </div>
 
@@ -35,8 +35,8 @@
                         <th>Leauge</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr *ngFor='let club of clubs'>
+                <tbody class='body'>
+                    <tr *ngFor='let club of clubs | clubFilter:listFilter'>
                         <td>{{club.id}}</td>
                         <td>                            
                             <img [src]='club.imageUrl'

@@ -1,5 +1,45 @@
 .panel-body {
-    width: 70%;
+    width: 50%;
     margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
+thead {
+    color: #337AB7;
+}
+.body { 
+
+    background-color: #337AB7;
+    color: ghostwhite
+}
+.td {
+    background-color: white
+}
+.table-responsive {
+    background-color: whitesmoke;
+}
+.panel {
+    background-image: url(app/assets/images/pozadina.jpg);   
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+
+
+
+
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+} 
+.col-md-2{
+    font-size: 105%;
+}
