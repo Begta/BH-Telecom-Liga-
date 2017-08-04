@@ -5,12 +5,3 @@ li {
 div.panel-heading {
    font-size: x-large; 
 }
-
-.panel-body {
-    width: 70%;
-    margin: auto;
-}
-
-.panel-primary {
-    background-color: blue
-}

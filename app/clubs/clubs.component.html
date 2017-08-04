@@ -23,12 +23,8 @@
             <table class='table' *ngIf='clubs && clubs.length' >
                 <thead>
                     <tr>
-                        <th>
-                            <button class='btn btn-primary'>
-                                Show Logo
-                            </button>
-                        </th>
                         <th>Id</th>
+                        <th>Logo</th>
                         <th>Name</th>
                         <th>Nick Name</th>
                         <th>Founded</th>
@@ -40,13 +36,13 @@
                 </thead>
                 <tbody>
                     <tr *ngFor='let club of clubs'>
-                        <td>
+                        <td>{{club.id}}</td>
+                        <td>                            
                             <img [src]='club.imageUrl'
                                  [style.width.px]='imageWidth'
                                  [style.margin.px]= 'imageMargin'
-                                 [title]='club.name'>
+                                 [title]='club.name | uppercase'>
                         </td>
-                        <td>{{club.id}}</td>
                         <td>{{club.name}}</td>
                         <td>{{club.nickName}}</td>   
                         <td>{{club.founded}}</td>

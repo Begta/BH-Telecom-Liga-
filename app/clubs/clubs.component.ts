@@ -30,7 +30,7 @@ export class ClubsComponent {
             "stadiumCapacity": 5628,
             "coach": "Zlatan Mijo Jelić",
             "league": "Premier League BiH",
-            "imageUrl": "app/assets/images/FK_Široki_Brijeg_logo.png"
+            "imageUrl": "app/assets/images/FK_Siroki_Brijeg_logo.png"
         },
         {
             "id": 3,
@@ -52,7 +52,7 @@ export class ClubsComponent {
             "stadiumCapacity": 3000,
             "coach": "Darko Vojvodić",
             "league": "Premier League BiH",
-            "imageUrl": "app/assets/images/FK_Gošk_Gabela_logo.gif"
+            "imageUrl": "app/assets/images/FK_Gosk_Gabela_logo.gif"
         },
         {
             "id": 5,
@@ -118,7 +118,7 @@ export class ClubsComponent {
             "stadiumCapacity": 17000,
             "coach": "Admir Adžem",
             "league": "Premier League BiH",
-            "imageUrl": "app/assets/images/FK_Željezničar_logo.png"
+            "imageUrl": "app/assets/images/FK_Zeljeznicar_logo.png"
         },
         {
             "id": 11,
@@ -140,7 +140,7 @@ export class ClubsComponent {
             "stadiumCapacity": 15600,
             "coach": "Kemal Hafizović",
             "league": "Premier League BiH",
-            "imageUrl": "app/assets/images/FK_Čelik_logo.png"
+            "imageUrl": "app/assets/images/FK_Celik_logo.png"
         }
     ]
 }
