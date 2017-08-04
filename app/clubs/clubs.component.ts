@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { IClubs } from './clubs';
 
 @Component({
     selector: 'tb-clubs',
@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class ClubsComponent {
     pageTitle: string = 'Spisak klubova učesnika BH Telecom Premier Lige 2017/2018'
     imageWidth: number = 50;
-    imageMargin: number =2;
-    clubs: any []  = [
+    imageMargin: number = 2;
+    listFilter: string;
+    clubs: IClubs []  = [
         {
             "id": 1,
             "name": "Fudbalski Klub Sloboda Tuzla",
@@ -143,4 +144,4 @@ export class ClubsComponent {
             "imageUrl": "app/assets/images/FK_Celik_logo.png"
         }
     ]
-}
+} 
