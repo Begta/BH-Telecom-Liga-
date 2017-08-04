@@ -24,5 +24,6 @@ export class ClubsComponent implements OnInit {
                     error => this.errorMessage = <any>error);
         }
         
-    }
-} 
+    
+}
+
