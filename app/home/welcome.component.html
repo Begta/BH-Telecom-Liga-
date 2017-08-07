@@ -6,8 +6,13 @@
 
 <div class="mynavl">
     <div class="mynavlcontent">
-            <a href="grad.html" target="_self"><b>Spisak klubova</b></a><br>
-            <a href="http://www.youtube.com/" target="_blank"><b>Youtube</b></a>
+        <nav class='navbar navbar-default'>
+            <ul class='nav navbar-nav'>
+                <li><a [routerLink]="['/welcome']">Početna</a></li>
+                <li><a [routerLink]="['/clubs']">Spisak Timova</a></li>
+            </ul>
+        </nav> 
+            <router-outlet></router-outlet>
     </div>
 </div>
 <div class="mysection">
