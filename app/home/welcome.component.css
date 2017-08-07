@@ -1,0 +1,59 @@
+.myheader {
+	background-color: #337AB7;
+	color: black;
+	text-align: center;
+	height: 100px;
+    width: 100%;
+    font-family: 'Saira', sans-serif;
+    font-family: 'Sedgwick Ave', cursive;
+
+}
+
+.mynavl{
+    line-height: 30px;
+    height: 1100px;
+    width: 10%;
+    float: left;
+
+
+}
+
+.mynavlcontent {
+    padding: 5px;
+    font-size: 150%;
+}
+
+.mysection{
+    width: 80%;
+    height: 1100px;
+    float: left;
+    background-image: url(app/assets/images/pozadina.jpg);
+    color: 'white';    
+}
+
+.mysectioncontent{
+padding: 10px;
+}
+
+.mynavr{
+line-height: 30px;
+height: 1100px;
+width: 10%;
+float: right;
+
+}
+
+
+.mynavrcontent{
+padding: 5px;
+}
+
+.myfooter{
+background-color: #337AB7;
+clear: both;
+color: white;
+text-align: center;
+height: 20px;
+padding: 5px;
+
+}

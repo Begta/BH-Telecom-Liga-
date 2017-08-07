@@ -11,7 +11,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var clubs_filter_pipe_1 = require("./clubs/clubs-filter.pipe");
 var http_1 = require("@angular/http");
-//import { NgStyle } from '@angular/common';
+var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var welcome_component_1 = require("./home/welcome.component");
 var clubs_component_1 = require("./clubs/clubs.component");
@@ -25,8 +25,13 @@ AppModule = __decorate([
         imports: [
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
-            http_1.HttpModule
-            //  NgStyle 
+            http_1.HttpModule,
+            router_1.RouterModule.forRoot([
+                { path: 'clubs', component: clubs_component_1.ClubsComponent },
+                { path: 'welcome', component: welcome_component_1.WelcomeComponent },
+                { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+                { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
+            ])
         ],
         declarations: [
             app_component_1.AppComponent,

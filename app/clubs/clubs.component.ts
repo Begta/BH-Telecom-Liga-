@@ -20,8 +20,9 @@ export class ClubsComponent implements OnInit {
     
     ngOnInit(): void{
         this._clubService.getClubs()
-            .subscribe(clubs => this.clubs = clubs,
-                    error => this.errorMessage = <any>error);
+            .subscribe(
+                clubs => this.clubs = clubs,
+                error => this.errorMessage = <any>error);
         }
         
     

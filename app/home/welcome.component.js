@@ -16,7 +16,8 @@ var WelcomeComponent = (function () {
 WelcomeComponent = __decorate([
     core_1.Component({
         selector: 'bh-prem',
-        templateUrl: 'app/home/welcome.component.html'
+        templateUrl: 'app/home/welcome.component.html',
+        styleUrls: ['app/home/welcome.component.css']
     })
 ], WelcomeComponent);
 exports.WelcomeComponent = WelcomeComponent;
