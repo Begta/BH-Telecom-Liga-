@@ -19,5 +19,5 @@ import { ClubService } from './clubs/club.service';
     providers: [ClubService]
 })
 export class AppComponent {
-
+    pageTitle: string = ''
 }

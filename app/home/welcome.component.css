@@ -6,6 +6,9 @@
     width: 100%;
     font-family: 'Saira', sans-serif;
     font-family: 'Sedgwick Ave', cursive;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 
 }
 
@@ -14,13 +17,17 @@
     height: 1100px;
     width: 10%;
     float: left;
-
-
+    background-image: url(app/assets/images/reklama_1.jpg);
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .mynavlcontent {
     padding: 5px;
     font-size: 150%;
+   
+
 }
 
 .mysection{
@@ -28,19 +35,25 @@
     height: 1100px;
     float: left;
     background-image: url(app/assets/images/pozadina.jpg);
-    color: 'white';    
+    color: 'white';
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;    
 }
 
 .mysectioncontent{
-padding: 10px;
+    padding: 10px;
 }
 
 .mynavr{
-line-height: 30px;
-height: 1100px;
-width: 10%;
-float: right;
-
+    line-height: 30px;
+    height: 1100px;
+    width: 10%;
+    float: right;
+    background-image: url(app/assets/images/reklama_2.jpg);
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 
@@ -49,11 +62,13 @@ padding: 5px;
 }
 
 .myfooter{
-background-color: #337AB7;
-clear: both;
-color: white;
-text-align: center;
-height: 20px;
-padding: 5px;
-
+    background-color: #337AB7;
+    clear: both;
+    color: white;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }

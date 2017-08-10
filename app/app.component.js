@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var club_service_1 = require("./clubs/club.service");
 var AppComponent = (function () {
     function AppComponent() {
+        this.pageTitle = '';
     }
     return AppComponent;
 }());

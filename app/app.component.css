@@ -5,3 +5,10 @@ li {
 div.panel-heading {
    font-size: x-large; 
 }
+.navbar {
+    background-color: #337AB7;
+    color: red;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
