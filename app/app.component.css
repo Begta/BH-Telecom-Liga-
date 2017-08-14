@@ -12,3 +12,7 @@ div.panel-heading {
 .navbar-default .navbar-nav > li > a {
     color: whitesmoke;
 }
+
+.body {
+    background: #222;
+}
