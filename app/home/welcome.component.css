@@ -33,11 +33,11 @@
     width: 100%;
     height: 1100px;
     float: left;
-    background-image: url(app/assets/images/pozadina.jpg);
+    background-image: url(app/assets/images/header.jpg);
     color: 'white';
-    border-radius: 0px;
+    border-radius: 5px;
     margin-top: 0px;
-    margin-bottom: 5px;    
+    margin-bottom: 1px;    
 }
 
 .mysectioncontent{
@@ -60,17 +60,25 @@
 padding: 5px;
 }
 
-.myfooter{
-    background-color: #337AB7;
-    clear: both;
-    color: white;
-    text-align: center;
-    height: 50px;
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
+
 .text-center{
     color: whitesmoke;
+}
+
+.panel-heading{
+    font-family: 'Saira', sans-serif;
+    font-family: 'Sedgwick Ave', cursive;
+    border-radius: 5px;
+}
+.panel-body{
+    background-color: whitesmoke
+}
+
+.searchcss{
+ 
+ margin-bottom: 10px;
+    
+}
+.submitcss{
+    margin-bottom: 10px;
 }

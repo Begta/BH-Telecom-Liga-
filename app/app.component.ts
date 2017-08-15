@@ -6,7 +6,7 @@ import { ClubService } from './clubs/club.service';
     selector: 'bh-app',
     template: `
        <div>
-            <nav class='navbar navbar-default'>
+            <nav class='navbar navbar-default navbar-fixed-top'>
                     <a class='navbar-brand'>{{pageTitle}}</a>
                     <ul class='nav navbar-nav'>
                         <li><a [routerLink]="['/welcome']">Početna</a></li>

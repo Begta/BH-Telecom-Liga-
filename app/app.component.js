@@ -17,7 +17,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'bh-app',
-        template: "\n       <div>\n            <nav class='navbar navbar-default'>\n                    <a class='navbar-brand'>{{pageTitle}}</a>\n                    <ul class='nav navbar-nav'>\n                        <li><a [routerLink]=\"['/welcome']\">Po\u010Detna</a></li>\n                        <li><a [routerLink]=\"['/clubs']\">Spisak Timova</a></li>\n                    </ul>\n            </nav> \n                <router-outlet></router-outlet>\n        </div>\n    ",
+        template: "\n       <div>\n            <nav class='navbar navbar-default navbar-fixed-top'>\n                    <a class='navbar-brand'>{{pageTitle}}</a>\n                    <ul class='nav navbar-nav'>\n                        <li><a [routerLink]=\"['/welcome']\">Po\u010Detna</a></li>\n                        <li><a [routerLink]=\"['/clubs']\">Spisak Timova</a></li>\n                    </ul>\n            </nav> \n                <router-outlet></router-outlet>\n        </div>\n    ",
         providers: [club_service_1.ClubService]
     })
 ], AppComponent);
