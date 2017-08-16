@@ -52,6 +52,18 @@ div.panel-heading {
 }
 
 .title-margin {
-  padding: 16px;
+  padding: 36px;
   margin-top: 40px;
+}
+
+/*.searchcss{
+ 
+ margin-bottom: 10px;
+    
+}
+.submitcss{
+    margin-bottom: 10px;
+}*/
+.margin-right{
+    margin-right: 10px;
 }
