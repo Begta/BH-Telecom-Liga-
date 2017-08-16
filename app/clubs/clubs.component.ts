@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { IClubs } from './clubs';
 import { ClubService } from './club.service';
 
@@ -14,14 +15,13 @@ export class ClubsComponent implements OnInit {
     listFilter: string;
     clubs: IClubs []  = [];
     errorMessage: string;
-    constructor( private _clubService: ClubService) {
-
-    }
+    constructor( private _clubService: ClubService) {}
     
     ngOnInit(): void{
         this._clubService.getClubs()
-            .subscribe(clubs => this.clubs = clubs,
-                    error => this.errorMessage = <any>error);
+            .subscribe(
+                clubs => this.clubs = clubs,
+                error => this.errorMessage = <any>error);
         }
         
     

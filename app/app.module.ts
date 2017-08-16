@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule} from '@angular/forms';
 import { ClubsFilterPipe } from './clubs/clubs-filter.pipe';
 import { HttpModule } from '@angular/http';
-//import { NgStyle } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 
 import { AppComponent }  from './app.component';
 import { WelcomeComponent} from './home/welcome.component';
@@ -14,8 +15,14 @@ import { ClubsComponent } from './clubs/clubs.component';
   [ 
     BrowserModule,
     FormsModule,
-    HttpModule
-  //  NgStyle 
+    HttpModule,
+    RouterModule.forRoot([
+      {path: 'clubs', component: ClubsComponent},
+      {path: 'welcome', component: WelcomeComponent},
+      {path:'', redirectTo:'welcome',pathMatch:'full'},
+      {path: '**',redirectTo:'welcome',pathMatch:'full'}
+    ])
+   
   ],
   declarations: 
   [ 
