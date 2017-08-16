@@ -28,18 +28,11 @@ thead {
 			background-attachment: fixed;
 			background-size:  cover;
 			background-color: #999;
-
-
-
-
-    /*background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
 } 
 .col-md-2{
     font-size: 105%;
+}
+.class2{
+    color:red;
+    align-content : center;
 }
