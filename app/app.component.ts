@@ -26,16 +26,16 @@ import { ClubService } from './clubs/club.service';
     providers: [ClubService]
 })
 export class AppComponent {
-    pageTitle: string = ''
-    clickMessage ='';      
-    values = '';
-    _URL='https://www.facebook.com/';
-    
-     constructor (private _http: Http){}
+    pageTitle: string;
+    clickMessage: string;      
+    values: string;
+
     onKey(event: any) { // without type info
             this.values = event.target.value;
+
     }
 
-    onClickMe() {}
+    onClickMe() {
+    }
 
 }

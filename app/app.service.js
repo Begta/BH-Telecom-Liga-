@@ -12,19 +12,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
-var UserService = (function () {
-    function UserService(http) {
-        this.http = http;
+var AppService = (function () {
+    function AppService(_http) {
+        this._http = _http;
+        this._Url = "https://bs.wikipedia.org/wiki/FK_Sloboda_Tuzla";
     }
-    UserService.prototype.getUser = function () {
-        return this.http.get("https://angular.io/tutorial/toh-pt6")
-            .map(function (res) { return res.json(); });
+    AppService.prototype.getWeb = function () {
+        return this._http.get(this._Url)
+            .map(function (response) { return response.json(); });
     };
-    return UserService;
+    return AppService;
 }());
-UserService = __decorate([
+AppService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [http_1.Http])
-], UserService);
-exports.UserService = UserService;
+], AppService);
+exports.AppService = AppService;
 //# sourceMappingURL=app.service.js.map

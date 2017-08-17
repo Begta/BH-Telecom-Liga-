@@ -22,3 +22,6 @@ WelcomeComponent = __decorate([
 ], WelcomeComponent);
 exports.WelcomeComponent = WelcomeComponent;
 //# sourceMappingURL=welcome.component.js.map
+
+
+

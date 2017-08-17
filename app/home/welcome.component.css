@@ -5,7 +5,7 @@
 	height: 100px;
     width: 80%;
     font-family: 'Saira', sans-serif;
-    font-family: 'Sedgwick Ave', cursive;
+    font-family: 'Sedgwick Ave, cursive';
     border-radius: 5px;
     margin-top: 0px;
     margin-bottom: 5px;
@@ -174,3 +174,8 @@ img:hover{
     height: 116px;
     align-content: center;
 }
+
+
+
+
+
