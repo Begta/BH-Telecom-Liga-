@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent }  from './app.component';
 import { WelcomeComponent} from './home/welcome.component';
 import { ClubsComponent } from './clubs/clubs.component';
+import { WelcomeCalendarComponent } from './home/welcome.calendar.component';
 
 @NgModule({
   imports: 
@@ -29,7 +30,8 @@ import { ClubsComponent } from './clubs/clubs.component';
     AppComponent,
     WelcomeComponent,
     ClubsComponent,
-    ClubsFilterPipe, 
+    ClubsFilterPipe,
+    WelcomeCalendarComponent, 
   ],
   bootstrap: [ AppComponent ]
 })

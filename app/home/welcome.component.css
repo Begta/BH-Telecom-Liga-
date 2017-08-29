@@ -34,7 +34,7 @@
     height: 1100px;
     float: left;
     background-image: url(app/assets/images/header.jpg);
-    color: 'white';
+    color:white;
     border-radius: 5px;
     margin-top: 0px;
     margin-bottom: 1px;    
@@ -71,7 +71,8 @@ padding: 5px;
     border-radius: 5px;
 }
 .panel-body{
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 
@@ -174,3 +175,6 @@ img:hover{
     height: 116px;
     align-content: center;
 }
+
+
+

@@ -15,6 +15,7 @@ var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var welcome_component_1 = require("./home/welcome.component");
 var clubs_component_1 = require("./clubs/clubs.component");
+var welcome_calendar_component_1 = require("./home/welcome.calendar.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -38,6 +39,7 @@ AppModule = __decorate([
             welcome_component_1.WelcomeComponent,
             clubs_component_1.ClubsComponent,
             clubs_filter_pipe_1.ClubsFilterPipe,
+            welcome_calendar_component_1.WelcomeCalendarComponent,
         ],
         bootstrap: [app_component_1.AppComponent]
     })
